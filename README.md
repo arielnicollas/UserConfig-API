@@ -23,11 +23,11 @@ Para executar este projeto localmente, você precisa ter as seguintes ferramenta
 
 Siga os passos abaixo para iniciar a aplicação e o banco de dados.
 
-### 1. Iniciar os Containers
+## 1. Iniciar os Containers
 
 Navegue até o diretório raiz do projeto e inicie os serviços definidos no `docker-compose.yml`:
 
-Bash
+Bash:
 docker-compose up -d
 
 Nota: O flag -d executa os containers em background.
@@ -36,21 +36,26 @@ Nota: O flag -d executa os containers em background.
 
 Entre no diretório do backend (/backend) para instalar as dependências do Node.js:
 
-Bash
+Bash: 
+
 cd backend
+
 npm install
 
 ## 3. Acessos Locais
    
 API Backend: http://localhost:3000
+
 Banco de Dados MySQL: (Acessível apenas pelo container) - Porta: 3306
 
 *Rotas da API (Endpoints)*
 
 POST - /users - Cria um novo usuário no sistema. - 201 (Created), 409 (Duplicated Email), 400 (Bad Request)
+
 GET - /users - Retorna a lista de todos os usuários registrados. - 200 (OK)
 
 Payload (Corpo da Requisição) - POST /users
+
 O corpo da requisição deve seguir o formato JSON abaixo:
 
 JSON
