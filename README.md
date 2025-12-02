@@ -1,28 +1,32 @@
-🚀 UserConfig API - API Backend 
+# 🚀 UserConfig API - API Backend
 
 Uma API RESTful construída em Node.js para gerenciamento de usuários e configurações personalizadas, utilizando MySQL como banco de dados.
 
-✨ Tecnologias
+## ✨ Tecnologias
+
 Este projeto utiliza o seguinte stack:
 
-Linguagem: Node.js
-Framework/Runtime: Express 
-Banco de Dados: MySQL
-Containerização: Docker e Docker Compose💻 
+* **Linguagem:** Node.js
+* **Framework/Runtime:** Express
+* **Banco de Dados:** MySQL
+* **Containerização:** Docker e Docker Compose
 
-Pré-Requisitos
+## 💻 Pré-Requisitos
+
 Para executar este projeto localmente, você precisa ter as seguintes ferramentas instaladas:
 
-Docker
-Docker Compose
-Node.js e npm
+* Docker
+* Docker Compose
+* Node.js e npm
 
-🛠️ Instalação e Execução
+## 🛠️ Instalação e Execução
 
 Siga os passos abaixo para iniciar a aplicação e o banco de dados.
 
-1. Iniciar os Containers
-Navegue até o diretório raiz do projeto e inicie os serviços definidos no docker-compose.yml:
+### 1. Iniciar os Containers
+
+Navegue até o diretório raiz do projeto e inicie os serviços definidos no `docker-compose.yml`:
+
 Bash
 docker-compose up -d
 
@@ -60,19 +64,20 @@ JSON
 
 POST - /user-settings - Cria as configurações personalizadas para um usuário existente. - 201 (Created), 404 (User Not Found), 400 (Bad Request)
 
-*Validações de Dados*
+## Validações de Dados
 
-Idade - Deve ser um número inteiro maior ou igual a 18 (≥ 18). - POST /users
-Email - Deve ser um formato de email válido e único (não pode existir na base de dados). - POST /users
-Tema - Deve ser uma das opções: "dark", "medium" ou "light". - POST /user-settings
-Notificações Por Email - Deve ser um valor booleano (true ou false). - POST /user-settings
+* **Idade** - Deve ser um número inteiro maior ou igual a 18 (≥ 18). - POST /users
+* **Email** - Deve ser um formato de email válido e único (não pode existir na base de dados). - POST /users
+* **Tema** - Deve ser uma das opções: "dark", "medium" ou "light". - POST /user-settings
+* **Notificações Por Email** - Deve ser um valor booleano (true ou false). - POST /user-settings
 
-🤝 Como Contribuir
-Passo 1: Faça um fork (cópia) deste repositório.
-Passo 2: Crie uma branch para sua feature (git checkout -b feature/nome-da-feature).
-Passo 3: Faça o commit das suas alterações (git commit -m 'feat: adiciona nova funcionalidade X').
-Passo 4: Faça o push para a branch (git push origin feature/nome-da-feature).
-Passo 5: Abra um Pull Request.
+## 🤝 Como Contribuir
+
+1. Faça um fork (cópia) deste repositório.
+2. Crie uma branch para sua feature (`git checkout -b feature/nome-da-feature`).
+3. Faça o commit das suas alterações (`git commit -m 'feat: adiciona nova funcionalidade X'`).
+4. Faça o push para a branch (`git push origin feature/nome-da-feature`).
+5. Abra um Pull Request.
 
 
 
