@@ -32,7 +32,7 @@ docker-compose up -d
 
 Nota: O flag -d executa os containers em background.
 
-2. Instalar Dependências
+## 2. Instalar Dependências
 
 Entre no diretório do backend (/backend) para instalar as dependências do Node.js:
 
@@ -40,7 +40,7 @@ Bash
 cd backend
 npm install
 
-3. Acessos Locais
+## 3. Acessos Locais
    
 API Backend: http://localhost:3000
 Banco de Dados MySQL: (Acessível apenas pelo container) - Porta: 3306
@@ -60,7 +60,7 @@ JSON
   "email": "string"
 }
 
-*Configurações de Usuário*
+## *Configurações de Usuário*
 
 POST - /user-settings - Cria as configurações personalizadas para um usuário existente. - 201 (Created), 404 (User Not Found), 400 (Bad Request)
 
